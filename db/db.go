@@ -10,13 +10,13 @@ import (
 var DB *gorm.DB
 
 // InitDB initializes the database connection
-func InitDB() {
+func InitDB() error {
 	var err error
 	DB, err = gorm.Open(sqlite.Open("meme_coins.db"), &gorm.Config{})
 	if err != nil {
-		panic("failed to connect database")
+		return err
 	}
 
 	// Auto-migrate the database schema
-	DB.AutoMigrate(&models.MemeCoin{})
+	return DB.AutoMigrate(&models.MemeCoin{})
 }

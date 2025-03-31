@@ -9,7 +9,9 @@ import (
 
 func main() {
 	// Initialize the database
-	db.InitDB()
+	if err := db.InitDB(); err != nil {
+		panic("Failed to initialize database: " + err.Error())
+	}
 
 	// Set up Gin router
 	r := gin.Default()

@@ -34,7 +34,7 @@ func CreateMemeCoin(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, memeCoin)
+	c.JSON(http.StatusCreated, memeCoin)
 }
 
 // GetMemeCoin retrieves details of a meme coin by ID
@@ -82,7 +82,7 @@ func DeleteMemeCoin(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"message": "Meme coin deleted"})
+	c.JSON(http.StatusNoContent, gin.H{"message": "Meme coin deleted"})
 }
 
 // PokeMemeCoin increments the popularity score of a meme coin by ID

@@ -5,14 +5,11 @@ A simple RESTful API built with Golang (Gin framework) for managing meme coins, 
 - `main.go`: Application entry point.
 - `models/meme_coin.go`: Defines the `MemeCoin` data model.
 - `handlers/meme_coin.go`: Contains API endpoint logic.
+- `handlers/meme_coin_test.go`: Unit tests for the API endpoints.
 - `db/db.go`: Manages database connection and operations with SQLite.
 - `Dockerfile`: Docker configuration for building and running the app.
 - `go.mod`: Go module dependency file.
 - `go.sum`: Go module checksum file.
-
-## Prerequisites
-- **Go**: Version 1.20 or higher.
-- **Docker**: Required for containerization.
 
 ## Instructions for Running the Application
 

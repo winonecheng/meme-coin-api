@@ -1,10 +1,10 @@
 package main
 
 import (
+	"github.com/gin-gonic/gin"
+
 	"meme-coin-api/db"
 	"meme-coin-api/handlers"
-
-	"github.com/gin-gonic/gin"
 )
 
 func main() {

@@ -1,13 +1,13 @@
 package handlers
 
 import (
-	"meme-coin-api/db"
-	"meme-coin-api/models"
-
 	"net/http"
 	"time"
 
 	"github.com/gin-gonic/gin"
+
+	"meme-coin-api/db"
+	"meme-coin-api/models"
 )
 
 // CreateMemeCoin handles the creation of a new meme coin
